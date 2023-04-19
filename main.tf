@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_instance" "Demo" {
   ami           = "ami-05c8ca4485f8b138a"
-  instance_type = var.instacetype
+  instance_type = t2.micro
   key_name = "aaa"
   tags = {
     Name = "webserver"
